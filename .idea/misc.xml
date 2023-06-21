@@ -1,0 +1,35 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/drawable/backoffer.xml" value="0.12" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/drawable/cirback.xml" value="0.1105" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/drawable/header_background.xml" value="0.1505" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/drawable/search_icon_background.xml" value="0.1105" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/drawable/trending_background.xml" value="0.1105" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/drawable/white_back.xml" value="0.1105" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_best_offer.xml" value="0.19947916666666668" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_cart.xml" value="0.22" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_forword.xml" value="0.25" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_healthfood.xml" value="0.1" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_labtest.xml" value="0.18" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_medicines.xml" value="0.22" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_personalcare.xml" value="0.18" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_signup.xml" value="0.18" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_skincare.xml" value="0.16485507246376813" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_supplements.xml" value="0.22" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/activity_tyroid_care.xml" value="0.15217391304347827" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/layout/listval.xml" value="0.16485507246376813" />
+        <entry key="..\:/Semester 6/Mobile Web Application/PharmacyApp/app/src/main/res/menu/navigation_menu.xml" value="0.19947916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

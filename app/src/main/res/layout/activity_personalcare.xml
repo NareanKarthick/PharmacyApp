@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".personalcare">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutheader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/i_blue"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Personal Care"
+            android:textColor="@color/teal_200"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/image17"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_stroller_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView20"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/layoutheader2">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutscroll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/pc_1"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/pc_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image18"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc1" />
+
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Calcimax Forte Plus Strip Of 30 Tablets"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/pc_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 202.88"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image28"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="Click"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_2"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pc_1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image19"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc2"/>
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="161dp"
+                    android:layout_height="64dp"
+                    android:gravity="center"
+                    android:text="Lifelong Llpcm07 Beard Trimmer For Men With Quick Charge And Charge Indicator (Black)
+"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 900"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image29"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_3"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/pc_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pc_1">
+
+                <ImageView
+                    android:id="@+id/image20"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc3" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Whisper Choice Ultra Wings Size Xl Sanitary Pads Packet Of 20"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                android:id="@+id/pc_33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 133.92"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image30"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_4"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pc_1"
+                app:layout_constraintTop_toBottomOf="@+id/pc_2">
+
+                <ImageView
+                    android:id="@+id/image21"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc4"/>
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Sensodyne Sensitive Toothbrush (Soft)"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 42.35"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image31"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_5"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/pc_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pc_3">
+
+                <ImageView
+                    android:id="@+id/image22"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc5" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Khadi Natural Pure Neem Soap 125 Gm"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_55"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 60.8"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image32"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_6"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pc_3"
+                app:layout_constraintTop_toBottomOf="@+id/pc_4">
+
+                <ImageView
+                    android:id="@+id/image23"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc6"/>
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Selsun Shampoo 120ml"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_66"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 257.99"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image33"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_7"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/pc_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pc_5">
+
+                <ImageView
+                    android:id="@+id/image24"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc7" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Mirabelle Korea Charcoal Premium Facial Sheet Mask"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_77"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 134.1"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image34"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_8"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pc_5"
+                app:layout_constraintTop_toBottomOf="@+id/pc_6">
+
+                <ImageView
+                    android:id="@+id/image25"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc8"/>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Khadi Natural Teatree Essential Oil 15 Ml"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_88"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 277.5"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image35"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_9"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/pc_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pc_7">
+
+                <ImageView
+                    android:id="@+id/image26"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc9" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Venusia Max Intensive Moisturizing Lotion, Repairs Dry Skin, Provides Soft and Smooth Skin, 500gm"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_99"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 674.25"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image36"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pc_10"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pc_7"
+                app:layout_constraintTop_toBottomOf="@+id/pc_8">
+
+                <ImageView
+                    android:id="@+id/image27"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pc10"/>
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Himalaya Complete Care Toothpaste - 150g"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pc_101"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="123dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Rs 63.75"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image37"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:onClick="Click"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_stroller_24" />
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutendpc"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/trending_background"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/pc_10"
+                app:layout_constraintStart_toStartOf="@+id/pc_1"
+                app:layout_constraintTop_toBottomOf="@+id/pc_9">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

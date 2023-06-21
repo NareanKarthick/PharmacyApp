@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".supplements">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutheader1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/i_blue"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Health Care Supplements"
+            android:textColor="@color/teal_200"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_stroller_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView11"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/layoutheader1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutscroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutpersonalcare"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutheader1"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/pc"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutpersonalcare"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:onClick="pcfun"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Personal Care"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutskincare"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutpersonalcare"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/sc"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutpersonalcare"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:onClick="scfun"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Skin Care"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image10"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layouthealth"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutskincare"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/hfd"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutskincare"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:onClick="hfdfun"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Health Food and Drinks"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layouthomecare"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layouthealth"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/hc"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutskincare"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Home Care"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutayurvedic"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layouthomecare"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image13"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/ac"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layouthomecare"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Ayurvedic Care"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutfitness"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutayurvedic"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image14"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/fc"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutayurvedic"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Fitness and Supplements"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image14"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutelder"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutfitness"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image15"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/ec"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutfitness"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Elderly Care"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image15"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutmothercare"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutelder"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/image16"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/mc"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutelder"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_back"
+                    android:backgroundTint="@color/i_blue"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="Mother and Baby Care"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.321"
+                    app:layout_constraintStart_toEndOf="@id/image16"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutendcare"
+                android:layout_width="402dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutmothercare"
+                tools:layout_editor_absoluteX="4dp"
+                tools:ignore="NotSibling">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

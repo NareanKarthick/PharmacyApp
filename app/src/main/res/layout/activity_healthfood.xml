@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Healthfood"
+    android:background="@drawable/back1">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutheader3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/i_blue"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Health Foods and Drinks"
+            android:textColor="@color/teal_200"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/image59"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_stroller_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView62"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView62"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/layoutheader3">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutscroll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/hfd_1"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/hfd_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image60"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd1" />
+
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Liveasy Wellness Diabetic Protein - Blood Sugar and Weight Management -French Vanilla 400g Jar"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/hfd_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 549.45"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image61"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="Click"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_2"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hfd_1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image62"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd2"/>
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="161dp"
+                    android:layout_height="64dp"
+                    android:gravity="center"
+                    android:text="Liveasy Foods Healthy Seed Mix- Blend Of 6 Fibre Rich Healthy Seeds"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 174.5"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image63"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_3"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/hfd_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_1">
+
+                <ImageView
+                    android:id="@+id/image64"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd3" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Threptin Vanilla Butterscotch Nutrition Diskettes Tin Of 275 G"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView68"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 390.15"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/image65"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_4"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hfd_1"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_2">
+
+                <ImageView
+                    android:id="@+id/image66"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd4"/>
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Horlicks Diabetes Plus Vanilla 400 G Jar"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_44"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView70"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 625.6"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image67"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_5"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/hfd_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_3">
+
+                <ImageView
+                    android:id="@+id/image68"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd5" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Sugar Free Gold Sweetener Tablets Strip Of 300"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_55"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 176.7"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/image69"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_6"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hfd_3"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_4">
+
+                <ImageView
+                    android:id="@+id/image70"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd6"/>
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Lipton Pure and Light Green Tea Bags 10 Pcs
+"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_66"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 65"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image71"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_7"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/hfd_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_5">
+
+                <ImageView
+                    android:id="@+id/image72"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd7" />
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Dr. Vaidya'S Herboslim Tablet -30 - Pack Of 2"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_77"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 425"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/image73"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_8"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hfd_5"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_6">
+
+                <ImageView
+                    android:id="@+id/image74"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd8"/>
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Everherb (By Pharmeasy) Neem Juice"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_88"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView78"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 230"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image75"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_9"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/hfd_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_7">
+
+                <ImageView
+                    android:id="@+id/image76"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd9" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Nestle Nan Pro 1 Starter Infant Formula Powder - 400 G"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_99"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 690"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/image77"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hfd_10"
+                android:layout_width="190dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hfd_7"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_8">
+
+                <ImageView
+                    android:id="@+id/image78"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/hfd10"/>
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="152dp"
+                    android:layout_height="79dp"
+                    android:gravity="center"
+                    android:text="Pro Pl Vanilla Flavour Powder 500 Gm"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/hfd_101"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView82"
+                        android:layout_width="123dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Rs 517.44"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image79"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:onClick="Click"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_stroller_24" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutendhfd"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/trending_background"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/hfd_10"
+                app:layout_constraintStart_toStartOf="@+id/hfd_1"
+                app:layout_constraintTop_toBottomOf="@+id/hfd_9">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

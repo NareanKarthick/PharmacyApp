@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Best_offer"
+    android:background="@drawable/back1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutheader4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/i_blue"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Best Offer"
+            android:textColor="@color/teal_200"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/image80"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_stroller_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView83"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView83"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView
+            android:id="@+id/scrollView5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@id/layoutheader4">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutscroll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/offer1"
+                    android:layout_width="177dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/backoffer"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/offer2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/image81"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/pc2" />
+
+                    <TextView
+                        android:id="@+id/textView84"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="Lifelong Llpcm07 Beard Trimmer For Men With Quick Charge And Charge Indicator (Black)"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/of1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView90"
+                            android:layout_width="123dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Rs 900"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image29"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:contentDescription="@string/app_name"
+                            android:onClick="Click"
+                            android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offer2"
+                    android:layout_width="177dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/backoffer"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/offer1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/image82"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/pc5"/>
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="Khadi Natural Pure Neem Soap 125 Gm"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/of2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="123dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Rs 60.8"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image86"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:onClick="Click"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offer3"
+                    android:layout_width="177dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/backoffer"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/offer1"
+
+                    app:layout_constraintEnd_toStartOf="@id/offer2">
+
+                    <ImageView
+                        android:id="@+id/image87"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/sc4"/>
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="Nycil Cool Sandal Prickly Heat Talcum Powder, 150gm (Cool Herbal 50g Free)"
+                        android:textColor="@color/teal_200"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                    <LinearLayout
+                        android:id="@+id/of3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView94"
+                            android:layout_width="123dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Rs 130"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image89"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:onClick="Click"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offer4"
+                    android:layout_width="177dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/backoffer"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/offer1"
+                    app:layout_constraintTop_toBottomOf="@+id/offer2">
+
+                    <ImageView
+                        android:id="@+id/image90"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/sc6"/>
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="Organic India Virgin Coconut Oil - 500 Ml"
+                        android:textColor="@color/teal_200"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                    <LinearLayout
+                        android:id="@+id/of4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView96"
+                            android:layout_width="123dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Rs 696"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image91"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:onClick="Click"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offer5"
+                    android:layout_width="177dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/backoffer"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/offer3"
+
+                    app:layout_constraintEnd_toStartOf="@id/offer4">
+
+                    <ImageView
+                        android:id="@+id/image92"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/hfd4"/>
+                    <TextView
+                        android:id="@+id/textView97"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="Horlicks Diabetes Plus Vanilla 400 G Jar"
+                        android:textColor="@color/teal_200"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                    <LinearLayout
+                        android:id="@+id/of5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView98"
+                            android:layout_width="123dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Rs 625.6"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image93"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:onClick="Click"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offer6"
+                    android:layout_width="177dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/backoffer"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/offer3"
+                    app:layout_constraintTop_toBottomOf="@+id/offer4">
+
+                    <ImageView
+                        android:id="@+id/image94"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/hfd7"/>
+                    <TextView
+                        android:id="@+id/textView99"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="Dr. Vaidya'S Herboslim Tablet -30 - Pack Of 2"
+                        android:textColor="@color/teal_200"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                    <LinearLayout
+                        android:id="@+id/of6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView100"
+                            android:layout_width="123dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="Rs 425"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image95"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:onClick="Click"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_baseline_stroller_24" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layouttrending1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/trending_background"
+                    android:padding="20dp"
+                    app:layout_constraintEnd_toEndOf="@+id/offer6"
+                    app:layout_constraintStart_toStartOf="@+id/offer1"
+                    app:layout_constraintTop_toBottomOf="@+id/offer5">
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
